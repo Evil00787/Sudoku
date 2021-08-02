@@ -3,4 +3,11 @@
     <string name="sudoku">Sudoku</string>
     <string name="start">Start</string>
     <string name="graphic">Graphic</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="easy">easy</string>
+    <string name="medium">medium</string>
+    <string name="hard">hard</string>
+    <string name="master">master</string>
 </resources>

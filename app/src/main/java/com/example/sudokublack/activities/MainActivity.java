@@ -1,8 +1,10 @@
-package com.example.sudokublack;
+package com.example.sudokublack.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.sudokublack.R;
 
 public class MainActivity extends AppCompatActivity {
 
