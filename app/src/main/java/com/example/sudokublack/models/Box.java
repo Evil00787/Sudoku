@@ -34,4 +34,12 @@ public class Box {
     public void setValue(int value) {
         this.value = value;
     }
+
+    public int getRow() {
+        return row;
+    }
+
+    public int getColumn() {
+        return column;
+    }
 }

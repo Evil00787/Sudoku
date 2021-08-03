@@ -33,6 +33,7 @@ public class BoxRepository {
     }
 
     private void setBoxes(Context context) {
+        BoxesArrayFactory.init(context);
         dataset.addAll(BoxesArrayFactory.getBoxArrayList(context));
     }
 }

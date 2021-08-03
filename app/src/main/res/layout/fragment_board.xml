@@ -3,12 +3,169 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.BoardFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.sudokublack.ui.Board
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/board"
+            android:layout_marginHorizontal="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/mButton3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButton3"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/accent_color"
+            android:text="3"
+            android:textSize="24sp"
+            app:cornerRadius="28dp"
+            app:layout_constraintBottom_toTopOf="@+id/mButton8"
+            app:layout_constraintEnd_toStartOf="@+id/mButton9"
+            app:layout_constraintStart_toEndOf="@+id/mButton7" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButton4"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/accent_color"
+            android:text="4"
+            android:textSize="24sp"
+            app:cornerRadius="28dp"
+            app:layout_constraintBottom_toTopOf="@+id/mButton9"
+            app:layout_constraintEnd_toStartOf="@+id/mButtonX"
+            app:layout_constraintStart_toEndOf="@+id/mButton8" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButton2"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/accent_color"
+            android:text="2"
+            android:textSize="24sp"
+            app:cornerRadius="28dp"
+            app:layout_constraintBottom_toTopOf="@+id/mButton7"
+            app:layout_constraintEnd_toStartOf="@+id/mButton8"
+            app:layout_constraintStart_toEndOf="@+id/mButton6" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButton1"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/accent_color"
+            android:text="1"
+            android:textSize="24sp"
+            app:cornerRadius="28dp"
+            app:layout_constraintBottom_toTopOf="@+id/mButton6"
+            app:layout_constraintEnd_toStartOf="@+id/mButton7"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButton5"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/accent_color"
+            android:text="5"
+            android:textSize="24sp"
+            app:cornerRadius="28dp"
+            app:layout_constraintBottom_toTopOf="@+id/mButtonX"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toEndOf="@+id/mButton9" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButton8"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/accent_color"
+            android:text="8"
+            android:textSize="24sp"
+            app:cornerRadius="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mButton9"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mButton7" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButtonX"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/accent_color"
+            android:text="X"
+            android:textSize="24sp"
+            app:cornerRadius="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mButton9" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButton9"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/accent_color"
+            android:text="9"
+            android:textSize="24sp"
+            app:cornerRadius="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mButtonX"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mButton8" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButton6"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/accent_color"
+            android:text="6"
+            android:textSize="24sp"
+            app:cornerRadius="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mButton7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButton7"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/accent_color"
+            android:text="7"
+            android:textSize="24sp"
+            app:cornerRadius="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mButton8"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mButton6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
